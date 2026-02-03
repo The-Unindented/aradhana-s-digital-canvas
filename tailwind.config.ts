@@ -16,7 +16,7 @@ export default {
       fontFamily: {
         handwritten: ['Caveat', 'cursive'],
         mono: ['Space Mono', 'monospace'],
-        display: ['Poppins', 'sans-serif'],
+        display: ['Outfit', 'sans-serif'],
         body: ['Poppins', 'sans-serif'],
       },
       colors: {
@@ -53,6 +53,18 @@ export default {
           DEFAULT: "hsl(var(--coral))",
           foreground: "hsl(var(--coral-foreground))",
         },
+        highlight: {
+          DEFAULT: "hsl(var(--highlight))",
+          foreground: "hsl(var(--highlight-foreground))",
+        },
+        sky: {
+          DEFAULT: "hsl(var(--sky))",
+          foreground: "hsl(var(--sky-foreground))",
+        },
+        lavender: {
+          DEFAULT: "hsl(var(--lavender))",
+          foreground: "hsl(var(--lavender-foreground))",
+        },
         popover: {
           DEFAULT: "hsl(var(--popover))",
           foreground: "hsl(var(--popover-foreground))",
@@ -74,8 +86,11 @@ export default {
       },
       borderRadius: {
         lg: "var(--radius)",
-        md: "calc(var(--radius) - 2px)",
-        sm: "calc(var(--radius) - 4px)",
+        md: "calc(var(--radius) - 4px)",
+        sm: "calc(var(--radius) - 8px)",
+        xl: "calc(var(--radius) + 4px)",
+        "2xl": "calc(var(--radius) + 8px)",
+        "3xl": "calc(var(--radius) + 16px)",
       },
       keyframes: {
         "accordion-down": {
@@ -96,7 +111,23 @@ export default {
         },
         "bounce-soft": {
           "0%, 100%": { transform: "translateY(0)" },
-          "50%": { transform: "translateY(-5px)" },
+          "50%": { transform: "translateY(-6px)" },
+        },
+        "pulse-soft": {
+          "0%, 100%": { opacity: "1", transform: "scale(1)" },
+          "50%": { opacity: "0.85", transform: "scale(1.02)" },
+        },
+        "spin-slow": {
+          from: { transform: "rotate(0deg)" },
+          to: { transform: "rotate(360deg)" },
+        },
+        "marquee": {
+          from: { transform: "translateX(0)" },
+          to: { transform: "translateX(-100%)" },
+        },
+        "marquee2": {
+          from: { transform: "translateX(100%)" },
+          to: { transform: "translateX(0)" },
         },
       },
       animation: {
@@ -105,11 +136,22 @@ export default {
         "float": "float 6s ease-in-out infinite",
         "wiggle": "wiggle 0.5s ease-in-out infinite",
         "bounce-soft": "bounce-soft 2s ease-in-out infinite",
+        "pulse-soft": "pulse-soft 2s ease-in-out infinite",
+        "spin-slow": "spin-slow 12s linear infinite",
+        "marquee": "marquee 30s linear infinite",
+        "marquee2": "marquee2 30s linear infinite",
       },
       boxShadow: {
-        'paper': '0 4px 20px rgba(0, 0, 0, 0.08), 0 2px 8px rgba(0, 0, 0, 0.04)',
-        'sticker': '2px 3px 0px rgba(0, 0, 0, 0.1)',
-        'card-hover': '0 8px 30px rgba(0, 0, 0, 0.12), 0 4px 12px rgba(0, 0, 0, 0.06)',
+        'paper': '0 4px 25px rgba(0, 0, 0, 0.06), 0 2px 10px rgba(0, 0, 0, 0.04)',
+        'sticker': '3px 4px 0px rgba(0, 0, 0, 0.08)',
+        'card-hover': '0 12px 40px rgba(0, 0, 0, 0.1), 0 6px 16px rgba(0, 0, 0, 0.06)',
+        'glow-mint': '0 0 30px rgba(134, 239, 172, 0.3)',
+        'glow-pink': '0 0 30px rgba(251, 146, 160, 0.3)',
+        'glow-yellow': '0 0 30px rgba(253, 224, 71, 0.3)',
+      },
+      backgroundImage: {
+        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
+        'gradient-conic': 'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
     },
   },

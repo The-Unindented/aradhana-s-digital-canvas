@@ -1,0 +1,15 @@
+<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="32" y2="32" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#F9A8D4"/>
+      <stop offset="100%" stop-color="#86EFAC"/>
+    </linearGradient>
+    <linearGradient id="starGrad" x1="16" y1="8" x2="16" y2="24" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#FDE047"/>
+      <stop offset="100%" stop-color="#FBBF24"/>
+    </linearGradient>
+  </defs>
+  <rect width="32" height="32" rx="8" fill="url(#bgGrad)"/>
+  <path d="M16 8L17.5 13.5L23 14L18.5 17.5L20 23L16 20L12 23L13.5 17.5L9 14L14.5 13.5L16 8Z" fill="url(#starGrad)"/>
+  <circle cx="16" cy="16" r="3" fill="white" fill-opacity="0.9"/>
+</svg>
