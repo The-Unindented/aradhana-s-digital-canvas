@@ -168,7 +168,7 @@ This project is open source and available under the [MIT License](LICENSE).
 
 **Aradhana Singh**
 - Website: [aiwitharadhana.in](https://aiwitharadhana.in)
-- LinkedIn: [singharadhana](https://linkedin.com/in/singharadhana)
+- LinkedIn: [singharadhana](https://www.linkedin.com/in/aradhana2911/)
 - GitHub: [The-Unindented](https://github.com/The-Unindented)
 
 ---
